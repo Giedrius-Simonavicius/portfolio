@@ -9,7 +9,7 @@ export const metadata = {
   title: "Giedrius | Front-End Developer",
   description: "Portfolio of Giedrius Simonavičius",
   icons: {
-    icon: "./assets/logo.png",
+    icon: "./assets/logo_dark.png",
   },
 };
 
