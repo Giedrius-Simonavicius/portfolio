@@ -23,21 +23,30 @@ export default function Navbar() {
       } fixed top-0 left-0 right-0 px-5 z-[10] bg-bgColor flex justify-between items-center`}
     >
       <Link href="/">
-        <img src="./assets/logo.png" alt="GS logo" width={120} />
+        <img src="./assets/logo_dark.png" alt="GS logo" width={120} />
       </Link>
+
       <nav>
-        <ul className="flex gap-6 uppercase text-xl font-semibold tracking-wide">
+        <ul className="flex text-textGray gap-6 uppercase text-xl font-semibold tracking-wider">
           <li>
-            <Link href="#">About</Link>
+            <Link className="hover:text-white duration-200" href="#">
+              About
+            </Link>
           </li>
           <li>
-            <Link href="#">Technologies</Link>
+            <Link className="hover:text-white duration-200   " href="#">
+              Technologies
+            </Link>
           </li>
           <li>
-            <Link href="#">My projects</Link>
+            <Link className="hover:text-white duration-200   " href="#">
+              My projects
+            </Link>
           </li>
           <li>
-            <Link href="#">Contact</Link>
+            <Link className="hover:text-white duration-200 " href="#">
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

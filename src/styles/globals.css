@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@layer base {
+  html {
+    font-family: "League Spartan, Helvetica, Arial, sans-serif";
+    font-weight: 600;
+    color: white;
+  }
+  li {
+    margin-bottom: 0.3rem;
+  }
+  img {
+    object-fit: contain;
+  }
+}
+
+.container {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  max-width: 1200rem;
+  margin: 0 auto;
+}
+.costBg {
+  background-image: url("../../public/assets/logo_dark_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}

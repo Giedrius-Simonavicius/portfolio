@@ -1,9 +1,9 @@
-import ShortAbout from "./components/ShortAbout";
+import Me from "./components/Me";
 
 export default function Home() {
   return (
-    <main>
-      <ShortAbout />
+    <main className="container">
+      <Me />
     </main>
   );
 }
