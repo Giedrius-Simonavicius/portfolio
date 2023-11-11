@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineArrowDown } from "react-icons/ai";
+import NextInfo from "./NextInfo";
 
 export default function AboutMe() {
   return (
@@ -38,12 +39,7 @@ export default function AboutMe() {
         . I am committed to continuous learning. At the moment I'm have started to scratch surfaces of TypeScript,
         Node.js and Next.js.
       </p>
-      <Link href="#technologies" className="mt-20 group w-fit tracking-wide text-lg text-[#25598e] relative">
-        <span className="border-b border-bgColor group-hover:border-purple-700 duration-150">Technologies</span>
-        <span className="absolute ml-2 text-xl duration-150 group-hover:text-xl mt-1">
-          <AiOutlineArrowDown />
-        </span>
-      </Link>
+      <NextInfo whereTo="Technologies" link="technologies" />
     </div>
   );
 }

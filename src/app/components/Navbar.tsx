@@ -39,7 +39,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link className="hover:text-white duration-200   " href="#">
+            <Link className="hover:text-white duration-200   " href="#projects">
               My projects
             </Link>
           </li>

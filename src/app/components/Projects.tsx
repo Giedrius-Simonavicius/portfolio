@@ -1,10 +1,11 @@
 import SingleProject from "./SingleProject";
 import onlineShopImg from "../../../public/assets/projects/online-shop.png";
 import porfolioImg from "../../../public/assets/projects/portfolio.png";
+import phangmanImg from "../../../public/assets/projects/hangman.png";
 
 export default function Projects() {
   return (
-    <div id="projects" className="text-center flex flex-col justify-center h-screen mt-10">
+    <div id="projects" className="text-center h-screen flex flex-col mt-20">
       <h2>Portfolio & Projects</h2>
       <SingleProject
         type="E-COMMERCE APPLICATION"
@@ -31,9 +32,10 @@ export default function Projects() {
         technologiesUsed="
         TypeScript
         "
-        img={porfolioImg}
+        img={phangmanImg}
         app="https://giedrius-hangman.netlify.app/"
         code="https://github.com/Giedrius-Simonavicius/Hangman-TS-react"
+        reverse
       />
     </div>
   );

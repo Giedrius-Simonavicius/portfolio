@@ -55,7 +55,7 @@ html {
 
 .hover\:gradient-from-to-r {
   background: linear-gradient(to right, #b4c6d5, #728fa7);
-  transition: background-position 0.3s ease-in;
+  transition: background-position 0.2s ease-in;
   background-size: 200% 100%;
   background-position: 0% 0%;
 }

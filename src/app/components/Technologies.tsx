@@ -1,5 +1,6 @@
 import React from "react";
 import SingleTechnology from "./SingleTechnology";
+import NextInfo from "./NextInfo";
 
 const technologies = [
   { name: "SiJavascript", imgAlt: "JavaScript" },
@@ -17,7 +18,7 @@ const technologies = [
 
 export default function Technologies(): JSX.Element {
   return (
-    <div id="technologies" className="text-center flex flex-col justify-center h-screen mt-10">
+    <div id="technologies" className="text-center flex flex-col justify-center h-screen mt-10 items-center">
       <h2>Skills & Technologies</h2>
       <p className="text-xl">The main area of my knowledge is front-end </p>
       <ul className="flex mt-20 gap-16 flex-wrap justify-center">
@@ -25,6 +26,7 @@ export default function Technologies(): JSX.Element {
           <SingleTechnology key={index} {...tech} />
         ))}
       </ul>
+      <NextInfo whereTo="My projects" link="projects" mt={20} />
     </div>
   );
 }
