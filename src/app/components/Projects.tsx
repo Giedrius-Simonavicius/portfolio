@@ -5,10 +5,10 @@ import phangmanImg from "../../../public/assets/projects/hangman.png";
 
 export default function Projects() {
   return (
-    <div id="projects" className="text-center h-screen flex flex-col mt-20">
+    <div id="projects" className="text-center mt-20">
       <h2>Portfolio & Projects</h2>
       <SingleProject
-        type="E-COMMERCE APPLICATION"
+        type="E-COMMERCE WEBSITE"
         about="Dummy online store for PC's, laptops, etc... with responsive and user friendly design."
         technologiesUsed="React JS, JavaScript, Tailwind CSS, Firebase "
         img={onlineShopImg}
@@ -17,7 +17,7 @@ export default function Projects() {
         reverse
       />
       <SingleProject
-        type="Portfolio website"
+        type="PORTFOLIO WEBSITE"
         about="My personal porfolio website where you can find information about me and projects that I made."
         technologiesUsed="Next JS,
         TypeScript,
@@ -27,7 +27,7 @@ export default function Projects() {
         code="https://github.com/Giedrius-Simonavicius/portfolio"
       />
       <SingleProject
-        type="Hangman game"
+        type="HANGMAN GAME"
         about="Very simple front-end only hangman game. This is my first project using typescript."
         technologiesUsed="
         TypeScript

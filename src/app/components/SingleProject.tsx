@@ -26,7 +26,9 @@ export default function SingleProject({ type, about, technologiesUsed, img, app,
         </div>
       </div>
       <div>
-        <h3 className="text-3xl text-left">{type}</h3>
+        <Link className="hover:text-purple-700 duration-150" href={app}>
+          <h3 className="text-3xl text-left">{type}</h3>
+        </Link>
         <p className="my-10 text-left">{about}</p>
         <p className="text-lg text-left">Technologies used: {technologiesUsed}</p>
       </div>
@@ -34,7 +36,9 @@ export default function SingleProject({ type, about, technologiesUsed, img, app,
   ) : (
     <div className="flex mt-20 gap-20 items-center mb-20">
       <div>
-        <h3 className="text-3xl text-left">{type}</h3>
+        <Link className="hover:text-blue-700 duration-150" href={app}>
+          <h3 className="text-3xl text-left">{type}</h3>
+        </Link>
         <p className="my-10 text-left">{about}</p>
         <p className="text-lg text-left">Technologies used: {technologiesUsed}.</p>
       </div>
