@@ -19,6 +19,9 @@ html {
   img {
     object-fit: contain;
   }
+  h2 {
+    font-size: 63px;
+  }
 }
 
 .container {
@@ -31,4 +34,32 @@ html {
   background-image: url("../../public/assets/logo_dark_bg.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.slider {
+  color: black;
+  text-decoration: none;
+  background-image: linear-gradient(black, black);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.slider:hover,
+.slider:focus,
+.slider:active {
+  background-size: 100% 0.1em;
+}
+
+.hover\:gradient-from-to-r {
+  background: linear-gradient(to right, #b4c6d5, #728fa7);
+  transition: background-position 0.3s ease-in;
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+}
+
+.hover\:gradient-from-to-r:hover {
+  background-position: -100% 0%;
 }

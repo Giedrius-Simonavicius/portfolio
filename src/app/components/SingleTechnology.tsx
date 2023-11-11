@@ -2,7 +2,6 @@ import React from "react";
 import { FaNode } from "react-icons/fa6";
 import * as SiIcons from "react-icons/si";
 
-// Define a type for SiIcons with an index signature
 type SiIconsType = typeof SiIcons & {
   [key: string]: React.ComponentType<any>;
 };
