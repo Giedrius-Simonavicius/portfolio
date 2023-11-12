@@ -3,9 +3,13 @@ import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FaFacebookF } from "react-icons/fa6";
 
-export default function Contacts() {
+type Contacts = {
+  inline?: boolean;
+};
+
+export default function Contacts({ inline }: Contacts) {
   return (
-    <div className="flex flex-col  gap-5 justify-center ml-auto py-4">
+    <div className={`flex ${inline ? "gap-10" : "flex-col ml-auto gap-5"}   justify-center  py-4`}>
       <Link href="https://www.linkedin.com/in/giedrius-simonavi%C4%8Dius-472936258/">
         <div
           title="LinkedIn"

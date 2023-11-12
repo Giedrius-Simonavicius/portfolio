@@ -1,6 +1,5 @@
 import React from "react";
 import SingleTechnology from "./SingleTechnology";
-import NextInfo from "./NextInfo";
 
 const technologies = [
   { name: "SiJavascript", imgAlt: "JavaScript" },
@@ -26,7 +25,6 @@ export default function Technologies(): JSX.Element {
           <SingleTechnology key={index} {...tech} />
         ))}
       </ul>
-      <NextInfo whereTo="My projects" link="projects" mt={20} />
     </div>
   );
 }

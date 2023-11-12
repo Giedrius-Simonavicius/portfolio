@@ -5,7 +5,7 @@ import phangmanImg from "../../../public/assets/projects/hangman.png";
 
 export default function Projects() {
   return (
-    <div id="projects" className="text-center mt-20">
+    <div id="projects" className="text-center  mt-20">
       <h2>Portfolio & Projects</h2>
       <SingleProject
         type="E-COMMERCE WEBSITE"
@@ -15,6 +15,7 @@ export default function Projects() {
         app="https://giedrius-online-shop.netlify.app/"
         code="https://github.com/Giedrius-Simonavicius/online-shop"
         reverse
+        white
       />
       <SingleProject
         type="PORTFOLIO WEBSITE"
@@ -36,6 +37,7 @@ export default function Projects() {
         app="https://giedrius-hangman.netlify.app/"
         code="https://github.com/Giedrius-Simonavicius/Hangman-TS-react"
         reverse
+        white
       />
     </div>
   );

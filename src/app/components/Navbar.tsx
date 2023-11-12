@@ -44,7 +44,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link className="hover:text-white duration-200 " href="#">
+            <Link className="hover:text-white duration-200 " href="#contactMe">
               Contact
             </Link>
           </li>

@@ -9,11 +9,21 @@ type SingleProjectProps = {
   app: string;
   code: string;
   reverse?: boolean;
+  white?: boolean;
 };
 
-export default function SingleProject({ type, about, technologiesUsed, img, app, code, reverse }: SingleProjectProps) {
+export default function SingleProject({
+  type,
+  about,
+  technologiesUsed,
+  img,
+  app,
+  code,
+  reverse,
+  white,
+}: SingleProjectProps) {
   return reverse ? (
-    <div className="flex my-20 gap-20 items-center ">
+    <div className={`${white ? "opacity-90" : ""} flex my-20 gap-20 items-center`}>
       <div className="relative flex items-center justify-center w-[50%] shadow-xl shadow-gray-400 rounded-xl group duration-200 hover:gradient-from-to-r">
         <Image className="rounded-xl duration-700 group-hover:opacity-20" src={img} alt="online shop" />
         <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
@@ -34,7 +44,7 @@ export default function SingleProject({ type, about, technologiesUsed, img, app,
       </div>
     </div>
   ) : (
-    <div className="flex mt-20 gap-20 items-center mb-20">
+    <div className={`${white ? "opacity-90" : ""} flex my-20 gap-20 items-center`}>
       <div>
         <Link className="hover:text-blue-700 duration-150" href={app}>
           <h3 className="text-3xl text-left">{type}</h3>
