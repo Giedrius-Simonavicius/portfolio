@@ -1,8 +1,11 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { RxHamburgerMenu } from "react-icons/Rx";
+import Contacts from "./Contacts";
 
 export default function Navbar() {
+  const [navOpen, setNavOpen] = useState(false);
   const [shadow, setShadow] = useState(false);
 
   useEffect(() => {
@@ -13,8 +16,21 @@ export default function Navbar() {
         setShadow(false);
       }
     };
+
     window.addEventListener("scroll", handleShadow);
+
+    return () => {
+      window.removeEventListener("scroll", handleShadow);
+    };
   }, []);
+
+  const handleNavToggle = () => {
+    setNavOpen(!navOpen);
+  };
+
+  const closeNav = () => {
+    setNavOpen(false);
+  };
 
   return (
     <header
@@ -26,7 +42,57 @@ export default function Navbar() {
         <img src="./assets/logo_dark.png" alt="GS logo" width={120} />
       </Link>
 
-      <nav>
+      <nav className="md:hidden">
+        {navOpen && <div className="fixed inset-0 bg-[#2c2e3c] z-[50]" onClick={closeNav}></div>}
+        <RxHamburgerMenu size={50} onClick={handleNavToggle} />
+        <div
+          className={`flex flex-col justify-between fixed left-0 top-0 w-full h-full bg-[#2c2e3c] p-10 ease-in duration-300 transform ${
+            navOpen ? "translate-x-0" : "translate-x-full"
+          } z-[60]`}
+        >
+          <div className="flex justify-between items-center">
+            <Link href="#body" onClick={closeNav}>
+              <img src="./assets/logo-burger.png" alt="GS logo" width={200} />
+            </Link>
+            <button
+              onClick={closeNav}
+              className={` shadow-gray-400 shadow-lg h-[80px] w-[80px] flex justify-center items-center rounded-full p-3 text-5xl`}
+            >
+              &times;
+            </button>
+          </div>
+          <ul className="flex text-4xl flex-col items-center gap-12">
+            <li>
+              <Link onClick={closeNav} href="#about">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link onClick={closeNav} href="#technologies">
+                Technologies
+              </Link>
+            </li>
+            <li>
+              <Link onClick={closeNav} href="#projects">
+                My projects
+              </Link>
+            </li>
+            <li>
+              <Link onClick={closeNav} href="#contactMe">
+                Contact
+              </Link>
+            </li>
+            <li className="border-b-2">
+              <Link onClick={closeNav} href="/resume.pdf">
+                CV
+              </Link>
+            </li>
+          </ul>
+          <Contacts inline invertedColors />
+        </div>
+      </nav>
+
+      <nav className="hidden md:flex">
         <ul className="flex text-textGray gap-6 uppercase text-xl font-semibold tracking-wider">
           <li>
             <Link className="hover:text-white duration-200" href="#about">

@@ -15,9 +15,9 @@ const config: Config = {
         bgColor4: "#4c5881",
         bgColor5: "#575a77",
       },
-      // boxShadow: {
-      //   3xl: '10 35px 60px -15px rgb(156,163,175)'
-      // }
+      screens: {
+        'md': '812px',
+      },
     },
   },
   plugins: [],
