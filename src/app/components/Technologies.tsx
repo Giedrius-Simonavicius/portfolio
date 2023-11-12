@@ -17,14 +17,17 @@ const technologies = [
 
 export default function Technologies(): JSX.Element {
   return (
-    <div id="technologies" className="text-center flex flex-col justify-center h-screen mt-10 items-center">
+    <section
+      id="technologies"
+      className=" text-center container flex flex-col justify-center h-screen mt-10 items-center"
+    >
       <h2>Skills & Technologies</h2>
       <p className="text-xl">The main area of my knowledge is front-end </p>
-      <ul className="flex mt-20 gap-16 flex-wrap justify-center">
+      <ul className="flex mt-20 gap-16  flex-wrap justify-center">
         {technologies.map((tech, index) => (
           <SingleTechnology key={index} {...tech} />
         ))}
       </ul>
-    </div>
+    </section>
   );
 }

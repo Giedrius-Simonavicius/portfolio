@@ -5,15 +5,20 @@ import { FaFacebookF } from "react-icons/fa6";
 
 type Contacts = {
   inline?: boolean;
+  invertedColors?: boolean;
 };
 
-export default function Contacts({ inline }: Contacts) {
+export default function Contacts({ inline, invertedColors }: Contacts) {
   return (
-    <div className={`flex ${inline ? "gap-10" : "flex-col ml-auto gap-5"}   justify-center  py-4`}>
+    <div className={`flex ${inline ? "gap-10" : "flex-col ml-auto gap-5"} justify-center  py-4`}>
       <Link href="https://www.linkedin.com/in/giedrius-simonavi%C4%8Dius-472936258/">
         <div
           title="LinkedIn"
-          className="h-[50px] w-[50px] flex justify-center items-center hover:scale-125  hover:shadow-[0px_0px_5px_3px_rgba(0,0,0,0.9)]  ease-in duration-150 rounded-full hover:shadow-gray-400  shadow-lg shadow-gray-400 p-3 "
+          className={`${
+            invertedColors
+              ? "hover:scale-110 shadow-[0px_0px_7px_7px_rgba(0,0,0,0.9)] hover:shadow-[0px_0px_15px_15px_rgba(0,0,0,0.9)] hover:shadow-gray-300 shadow-gray-400"
+              : "hover:shadow-[0px_0px_5px_3px_rgba(0,0,0,0.9)] hover:shadow-gray-400 shadow-gray-400 shadow-lg"
+          } h-[50px] w-[50px] flex justify-center items-center hover:scale-125  ease-in duration-150 rounded-full p-3`}
         >
           <BiLogoLinkedin />
         </div>
@@ -21,7 +26,11 @@ export default function Contacts({ inline }: Contacts) {
       <Link href="https://github.com/Giedrius-Simonavicius">
         <div
           title="GitHub"
-          className="h-[50px] w-[50px] flex justify-center items-center hover:scale-125  hover:shadow-[0px_0px_5px_3px_rgba(0,0,0,0.9)]  ease-in duration-150 rounded-full hover:shadow-gray-400  shadow-lg shadow-gray-400 p-3 "
+          className={`${
+            invertedColors
+              ? "hover:scale-110 shadow-[0px_0px_7px_7px_rgba(0,0,0,0.9)] hover:shadow-[0px_0px_15px_15px_rgba(0,0,0,0.9)] hover:shadow-gray-300 shadow-gray-400"
+              : "hover:shadow-[0px_0px_5px_3px_rgba(0,0,0,0.9)] hover:shadow-gray-400 shadow-gray-400 shadow-lg"
+          } h-[50px] w-[50px] flex justify-center items-center hover:scale-125  ease-in duration-150 rounded-full p-3`}
         >
           <AiFillGithub />
         </div>
@@ -29,7 +38,11 @@ export default function Contacts({ inline }: Contacts) {
       <Link href="https://www.facebook.com/giedrius.simonavicius.1/">
         <div
           title="Facebook"
-          className="h-[50px] w-[50px] flex justify-center items-center hover:scale-125  hover:shadow-[0px_0px_5px_3px_rgba(0,0,0,0.9)]  ease-in duration-150 rounded-full hover:shadow-gray-400  shadow-lg shadow-gray-400 p-3 "
+          className={`${
+            invertedColors
+              ? "hover:scale-110 shadow-[0px_0px_7px_7px_rgba(0,0,0,0.9)] hover:shadow-[0px_0px_15px_15px_rgba(0,0,0,0.9)] hover:shadow-gray-300 shadow-gray-400"
+              : "hover:shadow-[0px_0px_5px_3px_rgba(0,0,0,0.9)] hover:shadow-gray-400 shadow-gray-400 shadow-lg"
+          } h-[50px] w-[50px] flex justify-center items-center hover:scale-125  ease-in duration-150 rounded-full p-3`}
         >
           <FaFacebookF />
         </div>
@@ -37,7 +50,11 @@ export default function Contacts({ inline }: Contacts) {
       <a href="mailto:giedrius.simonavicius123@gmail.com">
         <div
           title="email to: giedrius.simonavicius123@gmail.com"
-          className="h-[50px] w-[50px] flex justify-center items-center hover:scale-125  hover:shadow-[0px_0px_5px_3px_rgba(0,0,0,0.9)]  ease-in duration-150 rounded-full hover:shadow-gray-400  shadow-lg shadow-gray-400 p-3 "
+          className={`${
+            invertedColors
+              ? "hover:scale-110 shadow-[0px_0px_7px_7px_rgba(0,0,0,0.9)] hover:shadow-[0px_0px_15px_15px_rgba(0,0,0,0.9)] hover:shadow-gray-300 shadow-gray-400"
+              : "hover:shadow-[0px_0px_5px_3px_rgba(0,0,0,0.9)] hover:shadow-gray-400 shadow-gray-400 shadow-lg"
+          } h-[50px] w-[50px] flex justify-center items-center hover:scale-125  ease-in duration-150 rounded-full p-3`}
         >
           <AiOutlineMail />
         </div>

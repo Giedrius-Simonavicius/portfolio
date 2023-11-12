@@ -46,7 +46,7 @@ export default function SingleProject({
   ) : (
     <div className={`${white ? "opacity-90" : ""} flex my-20 gap-20 items-center`}>
       <div>
-        <Link className="hover:text-blue-700 duration-150" href={app}>
+        <Link className="hover:text-purple-700 duration-150" href={app}>
           <h3 className="text-3xl text-left">{type}</h3>
         </Link>
         <p className="my-10 text-left">{about}</p>

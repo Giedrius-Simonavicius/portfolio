@@ -6,7 +6,13 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
 @layer base {
   html {
     font-family: "League Spartan, Helvetica, Arial, sans-serif";

@@ -3,7 +3,7 @@ import Link from "next/link";
 import PhotoOfMe from "../../../public/assets/me_Bg_Img.jpg";
 export default function AboutMe() {
   return (
-    <div id="about" className="h-screen relative flex flex-col justify-center">
+    <section id="about" className="h-screen container relative flex flex-col justify-center">
       <div className="flex justify-between opacity-50 ">
         <Image className="absolute top-36 h-2/3 -z-10" src={PhotoOfMe} alt="Photo of Giedrius" />
         <h2 className="text-5xl">Hi, I'm Giedrius! </h2>
@@ -38,6 +38,6 @@ export default function AboutMe() {
         . I am committed to continuous learning. At the moment I'm have started to scratch surfaces of TypeScript,
         Node.js and Next.js.
       </p>
-    </div>
+    </section>
   );
 }

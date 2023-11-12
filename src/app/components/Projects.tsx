@@ -5,7 +5,7 @@ import phangmanImg from "../../../public/assets/projects/hangman.png";
 
 export default function Projects() {
   return (
-    <div id="projects" className="text-center  mt-20">
+    <section id="projects" className="text-center scroll-m-32 container mt-20">
       <h2>Portfolio & Projects</h2>
       <SingleProject
         type="E-COMMERCE WEBSITE"
@@ -39,6 +39,6 @@ export default function Projects() {
         reverse
         white
       />
-    </div>
+    </section>
   );
 }

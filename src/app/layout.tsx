@@ -2,7 +2,6 @@ import { Rubik } from "next/font/google";
 import "../styles/globals.css";
 import Head from "next/head";
 import Navbar from "./components/Navbar";
-import ContactMe from "./components/ContactMe";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
@@ -17,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body id="body" className={`bg-bgColor `}>
+      <body id="body" className={`bg-bgColor  `}>
         <Navbar />
         {children}
       </body>

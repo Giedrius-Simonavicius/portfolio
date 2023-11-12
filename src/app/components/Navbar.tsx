@@ -48,6 +48,14 @@ export default function Navbar() {
               Contact
             </Link>
           </li>
+          <li>
+            <Link
+              className="hover:text-white duration-200 border-b border-textGray hover:border-white "
+              href="/resume.pdf"
+            >
+              CV
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
