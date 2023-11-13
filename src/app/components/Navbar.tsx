@@ -46,11 +46,11 @@ export default function Navbar() {
         {navOpen && <div className="fixed inset-0 bg-[#2c2e3c] z-[50]" onClick={closeNav}></div>}
         <RxHamburgerMenu size={50} onClick={handleNavToggle} />
         <div
-          className={` flex flex-col justify-between fixed left-0 top-0 w-full h-full bg-[#2c2e3c] p-10 max-xs:p-1 ease-in duration-300 transform ${
+          className={`flex flex-col justify-between fixed left-0 top-0 w-full h-full bg-[#2c2e3c] p-10 max-xs:p-1 max-sm:pt-0 ease-in duration-300 transform ${
             navOpen ? "translate-x-0" : "translate-x-full"
           } z-[60]`}
         >
-          <div className="flex justify-around items-center">
+          <div className="flex justify-between items-center">
             <Link href="#body" className="w-1/2" onClick={closeNav}>
               <img src="./assets/logo-burger.png" alt="GS logo" width={200} />
             </Link>

@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="text-center max-xs:pt-[800px] max-sm:pt-[400px] max-md:pt-[150px]  max-md:scroll-m-0 scroll-m-32 container mt-20 max-xs:scroll-m-[-600px] max-sm:scroll-m-[-250px]"
+      className="text-center max-xs:pt-[800px] max-sm:pt-[450px] max-md:pt-[150px]  max-md:scroll-m-0 scroll-m-32 container mt-20 max-xs:scroll-m-[-600px] max-sm:scroll-m-[-250px]"
     >
       <h2>Portfolio & Projects</h2>
       <SingleProject

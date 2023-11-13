@@ -25,7 +25,7 @@ export default function Contacts({ inline, invertedColors, sm, navBar }: Contact
               ? "hover:scale-110 shadow-[0px_0px_7px_7px_rgba(0,0,0,0.9)] hover:shadow-[0px_0px_15px_15px_rgba(0,0,0,0.9)] hover:shadow-gray-300 shadow-gray-400"
               : "hover:shadow-[0px_0px_5px_3px_rgba(0,0,0,0.9)] hover:shadow-gray-400 shadow-gray-400 shadow-lg"
           } h-[50px] w-[50px] ${
-            navBar ? "w-[35px] h-[35px]" : ""
+            navBar ? "w-[35px]  p-0 h-[35px] " : ""
           } flex justify-center items-center hover:scale-125  ease-in duration-150 rounded-full p-3`}
         >
           <BiLogoLinkedin />
@@ -39,7 +39,7 @@ export default function Contacts({ inline, invertedColors, sm, navBar }: Contact
               ? "hover:scale-110 shadow-[0px_0px_7px_7px_rgba(0,0,0,0.9)] hover:shadow-[0px_0px_15px_15px_rgba(0,0,0,0.9)] hover:shadow-gray-300 shadow-gray-400"
               : "hover:shadow-[0px_0px_5px_3px_rgba(0,0,0,0.9)] hover:shadow-gray-400 shadow-gray-400 shadow-lg"
           } h-[50px] w-[50px] ${
-            navBar ? "w-[35px] h-[35px]" : ""
+            navBar ? "w-[35px]  p-0 h-[35px] " : ""
           } flex justify-center items-center hover:scale-125  ease-in duration-150 rounded-full p-3`}
         >
           <AiFillGithub />
@@ -53,7 +53,7 @@ export default function Contacts({ inline, invertedColors, sm, navBar }: Contact
               ? "hover:scale-110 shadow-[0px_0px_7px_7px_rgba(0,0,0,0.9)] hover:shadow-[0px_0px_15px_15px_rgba(0,0,0,0.9)] hover:shadow-gray-300 shadow-gray-400"
               : "hover:shadow-[0px_0px_5px_3px_rgba(0,0,0,0.9)] hover:shadow-gray-400 shadow-gray-400 shadow-lg"
           } h-[50px] w-[50px] ${
-            navBar ? "w-[35px] h-[35px]" : ""
+            navBar ? "w-[35px]  p-0 h-[35px] " : ""
           } flex justify-center items-center hover:scale-125  ease-in duration-150 rounded-full p-3`}
         >
           <FaFacebookF />
@@ -67,7 +67,7 @@ export default function Contacts({ inline, invertedColors, sm, navBar }: Contact
               ? "hover:scale-110 shadow-[0px_0px_7px_7px_rgba(0,0,0,0.9)] hover:shadow-[0px_0px_15px_15px_rgba(0,0,0,0.9)] hover:shadow-gray-300 shadow-gray-400"
               : "hover:shadow-[0px_0px_5px_3px_rgba(0,0,0,0.9)] hover:shadow-gray-400 shadow-gray-400 shadow-lg"
           } h-[50px] w-[50px] ${
-            navBar ? "w-[35px] h-[35px]" : ""
+            navBar ? "w-[35px]  p-0 h-[35px] " : ""
           } flex justify-center items-center hover:scale-125  ease-in duration-150 rounded-full p-3`}
         >
           <AiOutlineMail />
