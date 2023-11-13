@@ -39,3 +39,5 @@ next-env.d.ts
 .firebase
 .firebaserc
 items.txt
+firebase.ts
+.firebase.ts
