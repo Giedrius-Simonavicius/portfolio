@@ -1,11 +1,19 @@
-import Image from "next/image";
-import Logo from "../../public/assets/logo.png";
+import AboutMe from "./components/AboutMe";
+import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
+import Me from "./components/Me";
+import Projects from "./components/Projects";
+import Technologies from "./components/Technologies";
 
 export default function Home() {
   return (
     <main>
-      <div>main</div>
-      <Image src={Logo} alt="log" width={70} quality={100} placeholder="blur" />
+      <Me />
+      <AboutMe />
+      <Technologies />
+      <Projects />
+      <ContactMe />
+      <Footer />
     </main>
   );
 }
