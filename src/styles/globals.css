@@ -69,3 +69,27 @@ section {
 .hover\:gradient-from-to-r:hover {
   background-position: -100% 0%;
 }
+
+@media (max-width: 840px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+  }
+  section {
+    scroll-snap-align: none;
+    scroll-snap-stop: none;
+  }
+}
+
+@media (max-width: 450px) {
+}

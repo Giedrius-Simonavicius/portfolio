@@ -46,22 +46,22 @@ export default function Navbar() {
         {navOpen && <div className="fixed inset-0 bg-[#2c2e3c] z-[50]" onClick={closeNav}></div>}
         <RxHamburgerMenu size={50} onClick={handleNavToggle} />
         <div
-          className={`flex flex-col justify-between fixed left-0 top-0 w-full h-full bg-[#2c2e3c] p-10 ease-in duration-300 transform ${
+          className={` flex flex-col justify-between fixed left-0 top-0 w-full h-full bg-[#2c2e3c] p-10 max-xs:p-1 ease-in duration-300 transform ${
             navOpen ? "translate-x-0" : "translate-x-full"
           } z-[60]`}
         >
-          <div className="flex justify-between items-center">
-            <Link href="#body" onClick={closeNav}>
+          <div className="flex justify-around items-center">
+            <Link href="#body" className="w-1/2" onClick={closeNav}>
               <img src="./assets/logo-burger.png" alt="GS logo" width={200} />
             </Link>
             <button
               onClick={closeNav}
-              className={` shadow-gray-400 shadow-lg h-[80px] w-[80px] flex justify-center items-center rounded-full p-3 text-5xl`}
+              className={` shadow-gray-400 shadow-lg h-[80px] w-[80px] flex justify-center items-center rounded-full p-3 max-xs:h-[60px] max-xs:w-[60px] text-5xl max-xs:text-3xl `}
             >
               &times;
             </button>
           </div>
-          <ul className="flex text-4xl flex-col items-center gap-12">
+          <ul className="flex text-4xl max-xs:text-2xl flex-col items-center gap-12">
             <li>
               <Link onClick={closeNav} href="#about">
                 About
@@ -88,7 +88,7 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-          <Contacts inline invertedColors />
+          <Contacts navBar inline invertedColors />
         </div>
       </nav>
 

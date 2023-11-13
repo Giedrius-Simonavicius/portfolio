@@ -23,8 +23,8 @@ const SingleTechnology: React.FC<SingleTechnologyProps> = ({ name, imgAlt }) => 
 
   return (
     <li className="flex flex-col items-center">
-      <TechnologyIcon size={100} />
-      <h3 className="text-xl font-semibold">{imgAlt}</h3>
+      <TechnologyIcon size={60} />
+      <h3 className="text-xl mt-3 font-semibold">{imgAlt}</h3>
     </li>
   );
 };
