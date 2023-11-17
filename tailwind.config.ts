@@ -16,6 +16,7 @@ const config: Config = {
         bgColor5: "#575a77",
       },
       screens: {
+        '2lg': '1190px',
         'md': '812px',
         'xs': '390px',
       },

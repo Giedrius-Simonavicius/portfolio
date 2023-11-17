@@ -19,7 +19,7 @@ export default function AboutMe() {
           Hi, I'm Giedrius!{" "}
         </h2>
         <div className="w-2/3 max-sm:w-full max-sm:text-justify text-xl max-sm:my-8">
-          <p className="my-8 ">
+          <p className="mt-8 mb-5 ">
             I love diving into the world of front-end development, creating responsive, user-friendly web applications.
           </p>
           <p>
@@ -29,13 +29,13 @@ export default function AboutMe() {
           </p>
         </div>
       </div>{" "}
-      <p className="mb-3 text-xl max-sm:text-justify  max-sm:text-xl opacity-50">
+      <p className="mb-3 mt-10 text-xl max-sm:text-justify  max-sm:text-xl opacity-50">
         My interest in web development started years ago but it was put on hold until the time was right for me to
         change my career path.
       </p>
       <p className="mb-3 max-sm:my-8 text-xl max-sm:text-justify  max-sm:text-xl opacity-50">
-        In the end of 2022 I started learning code, took first course I loved it! In 2023 i took another course that
-        deep dived into front-end coding using technologies like React.js, JavaScript, CSS, HTML.
+        In the end of 2022 I started learning code, took first course and I loved it! In 2023 I signed up for another
+        course that deep dived into front-end coding using technologies like React.js, JavaScript, CSS, HTML.
       </p>
       <p className="text-xl max-sm:text-justify  max-sm:text-xl opacity-50">
         While I don't have formal experience, I have gained valuable exposure to modern technologies and libraries

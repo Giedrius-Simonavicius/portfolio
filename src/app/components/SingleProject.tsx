@@ -32,27 +32,31 @@ export default function SingleProject({
         <Image className="rounded-xl duration-700 group-hover:opacity-20" src={img} alt="online shop" />
         <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
           <Link href={app}>
-            <p className="mb-28 max-lg:mb-10 slider max-lg:text-3xl max-sm:mb-0 text-5xl">Application</p>
+            <p className="mb-20 max-lg:mb-10 slider max-2lg:mb-10 max-2lg:text-2xl max-md:text-3xl max-lg:text-2xl max-sm:mb-0 text-4xl">
+              Open website
+            </p>
           </Link>
           <Link href={code}>
-            <p className="slider text-4xl max-lg:text-2xl  my-4">{`<  Code  >`}</p>
+            <p className="slider text-3xl max-sm:text-xl  max-md:text-3xl max-lg:text-xl max-2lg:text-2xl my-4">{`<  check out code  >`}</p>
           </Link>
         </div>
       </div>
       <div className="max-md:flex hidden items-center gap-10 ">
         <Link href={app}>
-          <p className="text-2xl max-xs:text-lg">Application</p>
+          <p className="text-xl max-xs:text-lg">Open website</p>
         </Link>
         <Link href={code}>
-          <p className="text-2xl max-xs:text-lg my-4">{`<  Code  >`}</p>
+          <p className="text-xl max-xs:text-lg my-4">{`< check out code  >`}</p>
         </Link>
       </div>
       <div>
         <Link className="hover:text-purple-700 duration-150" href={app}>
           <h3 className="text-3xl max-md:text-center text-left max-md:text-2xl">{type}</h3>
         </Link>
-        <p className="my-10 max-md:text-center text-left">{about}</p>
-        <p className="text-lg max-md:text-center text-left">Technologies used: {technologiesUsed}</p>
+        <p className="my-10 max-md:text-center tracking-wide text-xl max-2lg:text-lg font-normal text-left">{about}</p>
+        <p className="text-xl max-2lg:text-lg font-normal tracking-wide  max-md:text-center text-left">
+          Technologies used: {technologiesUsed}
+        </p>
       </div>
     </div>
   );
